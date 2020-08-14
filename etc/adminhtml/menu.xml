@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Web4pro_SLogin::config_configuration"
+                title="Configuration SLogin"
+                module="Web4pro_SLogin"
+                sortOrder="90"
+                action="adminhtml/system_config/edit/section/slogin"
+                resource="Web4pro_SLogin::slogin"
+                parent="Web4pro_LinkForCMS::all"
+        />
+    </menu>
+</config>
