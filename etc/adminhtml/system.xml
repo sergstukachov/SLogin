@@ -18,6 +18,13 @@
                     <label>Module Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="hide_price" translate="label comment" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Hide</label>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <comment>message text when price is hidden</comment>
+                </field>
             </group>
         </section>
     </system>
