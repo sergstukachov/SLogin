@@ -1,10 +1,16 @@
 <?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <helloworld>
+        <slogin>
             <general>
                 <enable>0</enable>
             </general>
-        </helloworld>
+        </slogin>
+        <slogin>
+            <general>
+                <hide_price>Login first to see price</hide_price>
+            </general>
+        </slogin>
     </default>
 </config>

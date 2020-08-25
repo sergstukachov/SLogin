@@ -5,7 +5,7 @@
             <argument name="default" xsi:type="array">
                 <item name="default_render_class" xsi:type="string">Magento\Catalog\Pricing\Render\PriceBox</item>
                 <item name="default_render_template" xsi:type="string">Magento_Catalog::product/price/default.phtml</item>
-                <item name="default_amount_render_class" xsi:type="string">Magento\Framework\Pricing\Render\Amount</item>
+                <item name="default_amount_render_class" xsi:type="string">Web4pro\SLogin\Pricing\Render\Amount</item>
                 <item name="default_amount_render_template" xsi:type="string">Web4pro_SLogin::product/price/amount/default.phtml</item>
                 <item name="prices" xsi:type="array">
                     <item name="special_price" xsi:type="array">
@@ -16,7 +16,7 @@
                     </item>
                     <item name="final_price" xsi:type="array">
                         <item name="render_class" xsi:type="string">Magento\Catalog\Pricing\Render\FinalPriceBox</item>
-<!--                        <item name="render_template" xsi:type="string">Web4pro_SLogin::product/price/final_price.phtml</item>-->
+                        <item name="render_template" xsi:type="string">Magento_Catalog::product/price/final_price.phtml</item>
                     </item>
                     <item name="custom_option_price" xsi:type="array">
                         <item name="amount_render_template" xsi:type="string">Magento_Catalog::product/price/amount/default.phtml</item>
