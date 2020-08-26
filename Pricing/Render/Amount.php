@@ -25,7 +25,6 @@ class Amount extends MagentoAmount
      */
     public function enableModule()
     {
-        $enable = 0;
         return $enable = $this->dataMod->getIsEnable();
     }
 
@@ -34,7 +33,6 @@ class Amount extends MagentoAmount
      */
     public function textHidePrice()
     {
-        $text ='';
-        return $text = $this->dataMod->getHidePrice();
+        return $this->dataMod->getHidePrice();
     }
 }

@@ -5,6 +5,7 @@ use Magento\Framework\App\Helper\AbstractHelper;
 
 class Data extends AbstractHelper
 {
+
     public function __construct(
         \Magento\Framework\App\Helper\Context $context
     ) {

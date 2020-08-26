@@ -1,9 +1,12 @@
 <?php
-/** @var $block \Magento\Framework\Pricing\Render\Amount */
+/** @var $block \Web4pro\SLogin\Pricing\Render\Amount */
 $textHidePrice = $block->textHidePrice();
 $enable = $block->enableModule();
 if($enable): ?>
-    <?php echo "$textHidePrice"; ?>
+    <?= __("$textHidePrice") ?>
+    <form action="/customer/account/login" >
+        <button>SING IN</button>
+    </form>
 <?php else:?>
     <?php /** @var $block \Magento\Framework\Pricing\Render\Amount */ ?>
 
