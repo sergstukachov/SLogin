@@ -1,7 +1,11 @@
 <?php
-$x = 0;
-if($x): ?>
-<?php /** @var $block \Magento\Framework\Pricing\Render\Amount */ ?>
+/** @var $block \Magento\Framework\Pricing\Render\Amount */
+$textHidePrice = $block->textHidePrice();
+$enable = $block->enableModule();
+if($enable): ?>
+    <?php echo "$textHidePrice"; ?>
+<?php else:?>
+    <?php /** @var $block \Magento\Framework\Pricing\Render\Amount */ ?>
 
 <span class="price-container <?= $block->escapeHtmlAttr($block->getAdjustmentCssClasses()) ?>"
         <?= $block->getSchema() ? ' itemprop="offers" itemscope itemtype="http://schema.org/Offer"' : '' ?>>
@@ -23,8 +27,7 @@ if($x): ?>
     <?php endif; ?>
 </span>
 
-<?php else:?>
-    <?php echo '<b> To view the price </br> you need to log  </b>'; ?>
+
 <?php endif; ?>
 
 
