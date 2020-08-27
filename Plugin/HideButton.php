@@ -12,22 +12,22 @@ class HideButton
     /**
      * @var Data
      */
-    public $enableModule;
+    public $isEnableModule;
 
-    public function __construct(Data $enableModule)
+    public function __construct(Data $isEnableModule)
     {
-        $this->enableModule = $enableModule;
+        $this->isEnableModule = $isEnableModule;
     }
 
     /**
-     * @param Product $product
+     * @param Product $subject
      * @param $result
      * @return mixed
      */
-    public function afterIsSaleable(Product $product, $result)
+    public function afterIsSaleable(Product $subject, $result)
     {
-        if ($this->enableModule->getIsEnable()) {
-            return [];
+        if ($this->isEnableModule->getIsEnable()) {
+            return false;
         } else {
             return $result;
         }

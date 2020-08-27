@@ -23,9 +23,9 @@ class Amount extends MagentoAmount
     /**
      * @return mixed
      */
-    public function enableModule()
+    public function isEnableModule()
     {
-        return $enable = $this->dataMod->getIsEnable();
+        return $this->dataMod->getIsEnable();
     }
 
     /**
